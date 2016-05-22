@@ -11,5 +11,7 @@ print("Creating %d commits" % int(sys.argv[1]))
 
 for i in range(0,num_commits):
     os.system('echo blah >> a.txt')
+    os.system('git add *.txt')
+    os.system('git commit -m "automated commit"')
 
 
